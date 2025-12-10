@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística del Evento - XV Años de Ana Sofía</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #d4a5a5 0%, #f8b8d4 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .logistics-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #d4a5a5 0%, #f8b8d4 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            background: white;
+            color: #d4a5a5;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a.active {
+            background: #c48b8b;
+            color: white;
+        }
+
+        .pending-alert {
+            background: #fff9e6;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .pending-alert h3 {
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+
+        .pending-alert ul {
+            margin-left: 20px;
+            color: #666;
+        }
+
+        .pending-alert li {
+            margin: 5px 0;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #d4a5a5, #f8b8d4);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 100px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 38px;
+            top: 0;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #d4a5a5;
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px #d4a5a5;
+        }
+
+        .time-badge {
+            display: inline-block;
+            background: #d4a5a5;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .time-badge.pending {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .timeline-content {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #d4a5a5;
+        }
+
+        .timeline-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .timeline-content p {
+            color: #666;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .timeline-content .pending-text {
+            color: #f57c00;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .location-card {
+            background: white;
+            border: 2px solid #d4a5a5;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .location-card h4 {
+            color: #d4a5a5;
+            margin-bottom: 10px;
+        }
+
+        .location-card a {
+            display: inline-block;
+            background: #d4a5a5;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .location-card a:hover {
+            background: #c48b8b;
+            transform: translateX(5px);
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .section h2 {
+            color: #d4a5a5;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f8b8d4;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #d4a5a5 0%, #f8b8d4 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .info-box .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .info-box h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .checklist {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 12px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #d4a5a5;
+            transition: all 0.3s;
+        }
+
+        .checklist li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .checklist li::before {
+            content: "✓";
+            color: #d4a5a5;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #d4a5a5 0%, #f8b8d4 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .contact-section a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .equipment-section {
+            background: #fff8f8;
+            border: 2px solid #f8b8d4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .equipment-section h3 {
+            color: #d4a5a5;
+            margin-bottom: 15px;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .equipment-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #f8b8d4;
+        }
+
+        .equipment-item .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 60px;
+            }
+
+            .timeline-item::before {
+                left: 8px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        .print-button {
+            background: #d4a5a5;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .print-button:hover {
+            background: #c48b8b;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .print-button,
+            .nav-links,
+            .pending-alert {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logistics-container">
+        <div class="header">
+            <h1>📋 Logística del Evento</h1>
+            <p>XV Años - Ana Sofía Cruz Pérez</p>
+            <p style="font-size: 1em; margin-top: 10px;">Viernes, 16 de Enero de 2026</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">🎉 Invitación</a>
+            <a href="contrato.html">📄 Contrato</a>
+            <a href="logistica.html" class="active">📋 Logística</a>
+        </div>
+
+        <div class="pending-alert">
+            <h3>⚠️ Información Pendiente por Confirmar:</h3>
+            <ul>
+                <li>Dirección exacta de la Terraza del Poliforum para el evento del 16 de enero</li>
+                <li>Hora de llegada del equipo al Poliforum</li>
+                <li>Confirmar detalles finales del ramo y tiara para la sesión previa</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>📅 SESIÓN FOTOGRÁFICA PREVIA</h2>
+                <p style="color: #666; margin-bottom: 20px;"><strong>Fecha:</strong> Domingo 22 de Diciembre, 2025</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="time-badge">Antes de la 1:30 PM</span>
+                        <div class="timeline-content">
+                            <h3>💄 Arreglo Personal</h3>
+                            <p><strong>Ubicación:</strong> León, Guanajuato</p>
+                            <div class="location-card">
+                                <h4>📍 Punto de Arreglo</h4>
+                                <p>Mercurio de Echeveste 129, Hacienda Echeveste, León, Gto.</p>
+                                <a href="https://maps.app.goo.gl/yourlink" target="_blank">🗺️ Ver en Google Maps</a>
+                            </div>
+                            <p style="margin-top: 10px;"><strong>Importante:</strong> Ana Sofía debe estar completamente arreglada antes de salir hacia Santa Cecilia</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="time-badge">Durante el traslado</span>
+                        <div class="timeline-content">
+                            <h3>🚗 Traslado León → Guanajuato</h3>
+                            <p><strong>Distancia:</strong> Aproximadamente 56 km</p>
+                            <p><strong>Tiempo estimado:</strong> 1 hora</p>
+                            <p><strong>Costo adicional de traslado:</strong> $400</p>
+                            <div class="location-card">
+                                <h4>📍 Ruta de Ida</h4>
+                                <p>Hacienda Echeveste → Hotel Castillo Santa Cecilia</p>
+                                <a href="https://www.google.com/maps/dir/Mercurio+de+Echeveste+129,+Hacienda+Echeveste,+Le%C3%B3n,+Guanajuato/Hotel+Castillo+Santa+Cecilia,+De+Valenciana+s%2Fn-Km.+1,+San+Javier,+36020+Guanajuato,+Gto./@21.0640796,-101.5443356,34271m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x842bb8debc44a343:0x9d3293b9c6a59076!2m2!1d-101.6660427!2d21.1837237!1m5!1m1!1s0x842b73fc74309e7f:0x19d0f4825df02d25!2m2!1d-101.2583317!2d21.0307678?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">🗺️ Ver Ruta de Ida</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="time-badge">1:30 PM</span>
+                        <div class="timeline-content">
+                            <h3>📸 Inicio de Sesión Fotográfica</h3>
+                            <p><strong>Duración estimada:</strong> 2-3 horas</p>
+                            <div class="location-card">
+                                <h4>📍 Hotel Castillo Santa Cecilia</h4>
+                                <p>De Valenciana s/n-Km. 1, San Javier, 36020 Guanajuato, Gto.</p>
+                                <a href="https://maps.app.goo.gl/yourlink2" target="_blank">🗺️ Ver en Google Maps</a>
+                            </div>
+                            <p style="margin-top: 15px;"><strong>Escenas a Realizar:</strong></p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li>Fotos individuales de la quinceañera</li>
+                                <li>Fotos con el vestido completo</li>
+                                <li>Tomas con el ramo y tiara (pendiente de confirmar)</li>
+                                <li>Fotos en las instalaciones del hotel</li>
+                                <li>Tomas aéreas con dron</li>
+                                <li>Fotos de detalle del vestido, accesorios y zapatos</li>
+                                <li>Sesión en exteriores del castillo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="time-badge">Después de la sesión</span>
+                        <div class="timeline-content">
+                            <h3>🏠 Regreso a León</h3>
+                            <div class="location-card">
+                                <h4>📍 Ruta de Regreso</h4>
+                                <p>Hotel Castillo Santa Cecilia → Hacienda Echeveste</p>
+                                <a href="https://www.google.com/maps/dir/Hotel+Castillo+Santa+Cecilia,+De+Valenciana+s%2Fn-Km.+1,+San+Javier,+36020+Guanajuato,+Gto./Mercurio+de+Echeveste+129,+Hacienda+Echeveste,+Le%C3%B3n,+Guanajuato/@21.0659443,-101.5449865,34271m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x842b73fc74309e7f:0x19d0f4825df02d25!2m2!1d-101.2583317!2d21.0307678!1m5!1m1!1s0x842bb8debc44a343:0x9d3293b9c6a59076!2m2!1d-101.6660427!2d21.1837237?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">🗺️ Ver Ruta de Regreso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎉 DÍA DEL EVENTO PRINCIPAL</h2>
+                <p style="color: #666; margin-bottom: 20px;"><strong>Fecha:</strong> Viernes 16 de Enero, 2026</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="time-badge pending">Por Confirmar</span>
+                        <div class="timeline-content">
+                            <h3>📷 Llegada del Equipo</h3>
+                            <p class="pending-text">⚠️ Hora de llegada pendiente de confirmar</p>
+                            <p>Se recomienda que el equipo llegue 1-2 horas antes del inicio de la celebración para preparación y tomas previas</p>
+                            <div class="location-card">
+                                <h4>📍 Terraza del Poliforum</h4>
+                                <p class="pending-text">Dirección exacta pendiente de confirmar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="time-badge">7:00 PM</span>
+                        <div class="timeline-content">
+                            <h3>🎊 Inicio de la Celebración</h3>
+                            <p><strong>Ubicación:</strong> Terraza del Poliforum</p>
+                            <p><strong>Duración de cobertura:</strong> 5 horas (hasta 12:00 AM)</p>
+                            <p style="margin-top: 15px;"><strong>Eventos a Cubrir:</strong></p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li>Llegada de la quinceañera</li>
+                                <li>Recibimiento de invitados</li>
+                                <li>Vals de la quinceañera</li>
+                                <li>Cambio de zapatillas</li>
+                                <li>Baile con el padre</li>
+                                <li>Entrega de corona</li>
+                                <li>Brindis</li>
+                                <li>Pastel</li>
+                                <li>Baile general y ambiente</li>
+                                <li>Fotos con familiares e invitados</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="time-badge">12:00 AM</span>
+                        <div class="timeline-content">
+                            <h3>🌙 Fin de la Cobertura</h3>
+                            <p>El equipo de producción concluye la cobertura del evento</p>
+                            <p><strong>Nota:</strong> Si desean extender la cobertura más allá de las 5 horas incluidas, esto tendrá un costo adicional a cotizar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎥 Equipo de Producción</h2>
+                <div class="equipment-section">
+                    <h3>Equipos que se utilizarán en ambos eventos:</h3>
+                    <div class="equipment-grid">
+                        <div class="equipment-item">
+                            <div class="icon">📷</div>
+                            <h4>Fotografía</h4>
+                            <p><strong>1</strong> Cámara profesional</p>
+                            <p><strong>3</strong> Flashes</p>
+                        </div>
+                        <div class="equipment-item">
+                            <div class="icon">🎥</div>
+                            <h4>Video</h4>
+                            <p><strong>1</strong> Cámara de video 4K</p>
+                            <p><strong>2</strong> Lámparas LED</p>
+                        </div>
+                        <div class="equipment-item">
+                            <div class="icon">🚁</div>
+                            <h4>Dron</h4>
+                            <p><strong>1</strong> Dron profesional 4K</p>
+                            <p>(Sesión previa y día del evento)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📌 Información del Vestido</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="icon">👗</div>
+                        <h3>Color del Vestido</h3>
+                        <p>Brush con rosa</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon">🦋</div>
+                        <h3>Decoración</h3>
+                        <p>Con mariposas o flores</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon">💐</div>
+                        <h3>Marco Foto</h3>
+                        <p>Modelo 2081-04</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>✅ Lista de Verificación</h2>
+                <div class="checklist">
+                    <h3 style="color: #d4a5a5; margin-bottom: 15px;">Antes del 22 de Diciembre (Sesión Previa):</h3>
+                    <ul>
+                        <li>Confirmar que el vestido esté listo</li>
+                        <li>Tener listo el ramo y tiara</li>
+                        <li>Programar cita de arreglo personal en León</li>
+                        <li>Verificar horario de salida hacia Guanajuato</li>
+                        <li>Preparar accesorios para las fotos (zapatos, joyería)</li>
+                    </ul>
+
+                    <h3 style="color: #d4a5a5; margin: 20px 0 15px 0;">Antes del 8 de Enero (8 días antes del evento):</h3>
+                    <ul>
+                        <li style="font-weight: bold; color: #28a745;">✓ ANTICIPO REALIZADO: $500 pesos (29/nov/2025)</li>
+                        <li style="font-weight: bold; color: #d4a5a5;">LIQUIDAR SALDO FINAL: $6,400 pesos</li>
+                        <li>Confirmar dirección exacta de Terraza del Poliforum</li>
+                        <li>Confirmar horarios del evento</li>
+                        <li>Enviar lista de familiares para fotos grupales</li>
+                    </ul>
+
+                    <h3 style="color: #d4a5a5; margin: 20px 0 15px 0;">Una semana antes del evento (9 de enero):</h3>
+                    <ul>
+                        <li>Última confirmación con el equipo de producción</li>
+                        <li>Preparar lista de tomas especiales deseadas</li>
+                        <li>Compartir números de contacto de emergencia</li>
+                        <li>Confirmar hora de llegada del equipo</li>
+                    </ul>
+
+                    <h3 style="color: #d4a5a5; margin: 20px 0 15px 0;">Día del evento (16 de enero):</h3>
+                    <ul>
+                        <li>Designar un coordinador del evento</li>
+                        <li>Tener lista la música para el vals</li>
+                        <li>Coordinar con el DJ o música la proyección del videoclip</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📦 Entrega de Material</h2>
+                <div class="checklist">
+                    <h3 style="color: #d4a5a5; margin-bottom: 15px;">Lo que recibirás (30-45 días después del evento):</h3>
+                    <ul>
+                        <li>100 fotos impresas tamaño 5x7" en caja impresa</li>
+                        <li>1 foto ampliada 50x60 cm con marco 2081-04</li>
+                        <li>1 película USB en 4K editada, musicalizada y titulada</li>
+                        <li>1 videoclip para proyectar (con fotos de sesión previa)</li>
+                        <li>Material digital completo de fotografías</li>
+                        <li>Acceso a selector de fotos en línea</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2>📞 Contacto de Emergencia</h2>
+                <p><strong>Arturo Cruz - Producciones Foro 7</strong></p>
+                <p>📍 Dirección: Padilla 112, Cumbres de Arbide, León, Gto.</p>
+                <p>📱 WhatsApp: <a href="https://wa.me/524779203776" style="color: white; text-decoration: underline;">477 920 3776</a></p>
+                <p style="margin-top: 20px; font-size: 0.9em;">
+                    Para cualquier duda, cambio o confirmación de último momento, contactar directamente
+                </p>
+            </div>
+
+            <button class="print-button" onclick="window.print()">🖨️ Imprimir Logística</button>
+        </div>
+    </div>
+</body>
+</html>
