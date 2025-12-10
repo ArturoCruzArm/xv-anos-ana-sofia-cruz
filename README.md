@@ -12,16 +12,20 @@ Sitio web para los XV años de Ana Sofía Cruz Pérez
 
 ## 📍 Ubicaciones
 
-### Celebración y Recepción (Mismo Lugar)
-- **Hora:** 7:00 PM
-- **Lugar:** Terraza del Poliforum
-- **Dirección:** León, Guanajuato
-- **Observación:** La celebración y recepción se llevarán a cabo en el mismo lugar
-
 ### Sesión Fotográfica Previa
 - **Fecha:** Lunes 22 de diciembre de 2025
-- **Lugar:** Castillo de Santa Cecilia, Guanajuato
+- **Lugar:** Hotel Castillo Santa Cecilia
+- **Dirección:** De Valenciana s/n-Km. 1, San Javier, 36020 Guanajuato, Gto.
+- **Mapa:** [Ver en Google Maps](https://maps.app.goo.gl/sxwVGP7e3ZroM2ru9)
 - **Hospedaje:** Hotel (lunes para martes)
+
+### Celebración y Recepción (Mismo Lugar)
+- **Fecha:** Viernes, 16 de enero de 2026
+- **Hora:** 7:00 PM - 12:00 AM
+- **Lugar:** Terraza del Poliforum
+- **Dirección:** Mercurio de Echeveste 129, Hacienda Echeveste, León, Gto.
+- **Mapa:** [Ver en Google Maps](https://maps.app.goo.gl/x1V8jpeKCwWnSQ9M6)
+- **Observación:** La celebración y recepción se llevarán a cabo en el mismo lugar
 
 ## 📦 Paquete Contratado
 
