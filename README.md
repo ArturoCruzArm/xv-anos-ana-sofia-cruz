@@ -21,7 +21,8 @@ Sitio web para los XV años de Ana Sofía Cruz Pérez
 
 ### Celebración y Recepción (Mismo Lugar)
 - **Fecha:** Viernes, 16 de enero de 2026
-- **Hora:** 7:00 PM - 12:00 AM
+- **Hora del evento:** 7:00 PM - 12:00 AM
+- **Llegada del equipo de producción:** 6:00 - 6:30 PM
 - **Lugar:** Terraza del Poliforum
 - **Dirección:** Mercurio de Echeveste 129, Hacienda Echeveste, León, Gto.
 - **Mapa:** [Ver en Google Maps](https://maps.app.goo.gl/x1V8jpeKCwWnSQ9M6)
