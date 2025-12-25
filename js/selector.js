@@ -385,6 +385,14 @@ const LIMITES = {
 let photoSelections = {};
 let currentPhotoIndex = null;
 let currentFilter = 'all';
+
+// ========================================
+// LOCAL STORAGE FUNCTIONS
+// ========================================
+function loadSelections() {
+    try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
             photoSelections = JSON.parse(saved);
             console.log('Selecciones cargadas desde localStorage:', photoSelections);
         }
