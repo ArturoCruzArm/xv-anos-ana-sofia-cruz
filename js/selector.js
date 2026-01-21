@@ -374,14 +374,325 @@ const photos = [
     'imagenes/DJI_20251222_182629_010.webp',
     'imagenes/DJI_20251222_182631_094.webp',
     'imagenes/DJI_20251222_182634_287.webp',
+    'imagenes/DJI_20260116_203641_059.webp',
+    'imagenes/DJI_20260116_203700_516.webp',
+    'imagenes/DJI_20260116_203709_364.webp',
+    'imagenes/DJI_20260116_211818_168.webp',
+    'imagenes/DJI_20260116_211841_825.webp',
+    'imagenes/DJI_20260116_211914_420.webp',
+    'imagenes/DJI_20260116_212445_715.webp',
+    'imagenes/DJI_20260116_212528_767.webp',
+    'imagenes/DJI_20260116_213139_574.webp',
+    'imagenes/DJI_20260116_214146_157.webp',
+    'imagenes/DJI_20260116_214200_467.webp',
+    'imagenes/DJI_20260116_214310_429.webp',
+    'imagenes/DJI_20260116_214349_100.webp',
+    'imagenes/DJI_20260116_214436_713.webp',
+    'imagenes/DJI_20260116_214540_224.webp',
+    'imagenes/DJI_20260116_214543_418.webp',
+    'imagenes/DJI_20260116_214546_856.webp',
+    'imagenes/DJI_20260116_214635_844.webp',
+    'imagenes/DJI_20260116_214638_004.webp',
+    'imagenes/DJI_20260116_214644_137.webp',
+    'imagenes/DJI_20260116_214649_132.webp',
+    'imagenes/DJI_20260116_214730_265.webp',
+    'imagenes/DJI_20260116_214740_405.webp',
+    'imagenes/DJI_20260116_214758_166.webp',
+    'imagenes/DJI_20260116_214803_880.webp',
+    'imagenes/DJI_20260116_214806_011.webp',
+    'imagenes/DJI_20260116_214831_030.webp',
+    'imagenes/DJI_20260116_214958_122.webp',
+    'imagenes/DJI_20260116_215101_948.webp',
+    'imagenes/DJI_20260116_215300_692.webp',
+    'imagenes/DJI_20260116_215308_582.webp',
+    'imagenes/DJI_20260116_215431_921.webp',
+    'imagenes/DJI_20260116_215522_908.webp',
+    'imagenes/DJI_20260116_215708_662.webp',
+    'imagenes/DJI_20260116_215749_220.webp',
+    'imagenes/DJI_20260116_215849_492.webp',
+    'imagenes/DJI_20260116_215853_182.webp',
+    'imagenes/DJI_20260116_215906_714.webp',
+    'imagenes/DJI_20260116_215913_659.webp',
+    'imagenes/DJI_20260116_215935_737.webp',
+    'imagenes/DJI_20260116_215942_429.webp',
+    'imagenes/DJI_20260116_221517_855.webp',
+    'imagenes/DJI_20260116_221957_551.webp',
+    'imagenes/DJI_20260116_222017_726.webp',
+    'imagenes/DJI_20260116_222020_154.webp',
+    'imagenes/DJI_20260116_222421_586.webp',
+    'imagenes/DJI_20260116_222523_460.webp',
+    'imagenes/DSC_8356.webp',
+    'imagenes/DSC_8358.webp',
+    'imagenes/DSC_8360.webp',
+    'imagenes/DSC_8362.webp',
+    'imagenes/DSC_8372.webp',
+    'imagenes/DSC_8376.webp',
+    'imagenes/DSC_8378.webp',
+    'imagenes/DSC_8379.webp',
+    'imagenes/DSC_8380.webp',
+    'imagenes/DSC_8381.webp',
+    'imagenes/DSC_8382.webp',
+    'imagenes/DSC_8384.webp',
+    'imagenes/DSC_8389.webp',
+    'imagenes/DSC_8390.webp',
+    'imagenes/DSC_8391.webp',
+    'imagenes/DSC_8406.webp',
+    'imagenes/DSC_8408.webp',
+    'imagenes/DSC_8410.webp',
+    'imagenes/DSC_8411.webp',
+    'imagenes/DSC_8413.webp',
+    'imagenes/DSC_8414.webp',
+    'imagenes/DSC_8416.webp',
+    'imagenes/DSC_8417.webp',
+    'imagenes/DSC_8418.webp',
+    'imagenes/DSC_8419.webp',
+    'imagenes/DSC_8420.webp',
+    'imagenes/DSC_8421.webp',
+    'imagenes/DSC_8423.webp',
+    'imagenes/DSC_8426.webp',
+    'imagenes/DSC_8427.webp',
+    'imagenes/DSC_8428.webp',
+    'imagenes/DSC_8429.webp',
+    'imagenes/DSC_8430.webp',
+    'imagenes/DSC_8431.webp',
+    'imagenes/DSC_8432.webp',
+    'imagenes/DSC_8434.webp',
+    'imagenes/DSC_8436.webp',
+    'imagenes/DSC_8437.webp',
+    'imagenes/DSC_8438.webp',
+    'imagenes/DSC_8440.webp',
+    'imagenes/DSC_8441.webp',
+    'imagenes/DSC_8444.webp',
+    'imagenes/DSC_8453.webp',
+    'imagenes/DSC_8455.webp',
+    'imagenes/DSC_8457.webp',
+    'imagenes/DSC_8462.webp',
+    'imagenes/DSC_8465.webp',
+    'imagenes/DSC_8467.webp',
+    'imagenes/DSC_8468.webp',
+    'imagenes/DSC_8470.webp',
+    'imagenes/DSC_8473.webp',
+    'imagenes/DSC_8474.webp',
+    'imagenes/DSC_8475.webp',
+    'imagenes/DSC_8476.webp',
+    'imagenes/DSC_8477.webp',
+    'imagenes/DSC_8480.webp',
+    'imagenes/DSC_8482.webp',
+    'imagenes/DSC_8483.webp',
+    'imagenes/DSC_8484.webp',
+    'imagenes/DSC_8485.webp',
+    'imagenes/DSC_8487.webp',
+    'imagenes/DSC_8490.webp',
+    'imagenes/DSC_8491.webp',
+    'imagenes/DSC_8492.webp',
+    'imagenes/DSC_8497.webp',
+    'imagenes/DSC_8502.webp',
+    'imagenes/DSC_8513.webp',
+    'imagenes/DSC_8517.webp',
+    'imagenes/DSC_8518.webp',
+    'imagenes/DSC_8519.webp',
+    'imagenes/DSC_8521.webp',
+    'imagenes/DSC_8522.webp',
+    'imagenes/DSC_8523.webp',
+    'imagenes/DSC_8524.webp',
+    'imagenes/DSC_8525.webp',
+    'imagenes/DSC_8526.webp',
+    'imagenes/DSC_8527.webp',
+    'imagenes/DSC_8528.webp',
+    'imagenes/DSC_8529.webp',
+    'imagenes/DSC_8530.webp',
+    'imagenes/DSC_8532.webp',
+    'imagenes/DSC_8533.webp',
+    'imagenes/DSC_8537.webp',
+    'imagenes/DSC_8540.webp',
+    'imagenes/DSC_8543.webp',
+    'imagenes/DSC_8546.webp',
+    'imagenes/DSC_8551.webp',
+    'imagenes/DSC_8552.webp',
+    'imagenes/DSC_8553.webp',
+    'imagenes/DSC_8562.webp',
+    'imagenes/DSC_8567.webp',
+    'imagenes/DSC_8570.webp',
+    'imagenes/DSC_8575.webp',
+    'imagenes/DSC_8577.webp',
+    'imagenes/DSC_8578.webp',
+    'imagenes/DSC_8579.webp',
+    'imagenes/DSC_8582.webp',
+    'imagenes/DSC_8583.webp',
+    'imagenes/DSC_8585.webp',
+    'imagenes/DSC_8588.webp',
+    'imagenes/DSC_8589.webp',
+    'imagenes/DSC_8591.webp',
+    'imagenes/DSC_8593.webp',
+    'imagenes/DSC_8596.webp',
+    'imagenes/DSC_8597.webp',
+    'imagenes/DSC_8598.webp',
+    'imagenes/DSC_8599.webp',
+    'imagenes/DSC_8600.webp',
+    'imagenes/DSC_8601.webp',
+    'imagenes/DSC_8603.webp',
+    'imagenes/DSC_8604.webp',
+    'imagenes/DSC_8606.webp',
+    'imagenes/DSC_8607.webp',
+    'imagenes/DSC_8610.webp',
+    'imagenes/DSC_8612.webp',
+    'imagenes/DSC_8613.webp',
+    'imagenes/DSC_8615.webp',
+    'imagenes/DSC_8617.webp',
+    'imagenes/DSC_8619.webp',
+    'imagenes/DSC_8620.webp',
+    'imagenes/DSC_8621.webp',
+    'imagenes/DSC_8623.webp',
+    'imagenes/DSC_8624.webp',
+    'imagenes/DSC_8625.webp',
+    'imagenes/DSC_8628.webp',
+    'imagenes/DSC_8629.webp',
+    'imagenes/DSC_8630.webp',
+    'imagenes/DSC_8634.webp',
+    'imagenes/DSC_8635.webp',
+    'imagenes/DSC_8636.webp',
+    'imagenes/DSC_8639.webp',
+    'imagenes/DSC_8643.webp',
+    'imagenes/DSC_8644.webp',
+    'imagenes/DSC_8645.webp',
+    'imagenes/DSC_8647.webp',
+    'imagenes/DSC_8651.webp',
+    'imagenes/DSC_8652.webp',
+    'imagenes/DSC_8653.webp',
+    'imagenes/DSC_8655.webp',
+    'imagenes/DSC_8657.webp',
+    'imagenes/DSC_8666.webp',
+    'imagenes/DSC_8667.webp',
+    'imagenes/DSC_8668.webp',
+    'imagenes/DSC_8670.webp',
+    'imagenes/DSC_8675.webp',
+    'imagenes/DSC_8676.webp',
+    'imagenes/DSC_8678.webp',
+    'imagenes/DSC_8683.webp',
+    'imagenes/DSC_8685.webp',
+    'imagenes/DSC_8688.webp',
+    'imagenes/DSC_8692.webp',
+    'imagenes/DSC_8697.webp',
+    'imagenes/DSC_8702.webp',
+    'imagenes/DSC_8703.webp',
+    'imagenes/DSC_8704.webp',
+    'imagenes/DSC_8705.webp',
+    'imagenes/DSC_8706.webp',
+    'imagenes/DSC_8707.webp',
+    'imagenes/DSC_8708.webp',
+    'imagenes/DSC_8709.webp',
+    'imagenes/DSC_8710.webp',
+    'imagenes/DSC_8711.webp',
+    'imagenes/DSC_8714.webp',
+    'imagenes/DSC_8715.webp',
+    'imagenes/DSC_8718.webp',
+    'imagenes/DSC_8722.webp',
+    'imagenes/DSC_8725.webp',
+    'imagenes/DSC_8726.webp',
+    'imagenes/DSC_8727.webp',
+    'imagenes/DSC_8728.webp',
+    'imagenes/DSC_8730.webp',
+    'imagenes/DSC_8731.webp',
+    'imagenes/DSC_8733.webp',
+    'imagenes/DSC_8734.webp',
+    'imagenes/DSC_8735.webp',
+    'imagenes/DSC_8741.webp',
+    'imagenes/DSC_8748.webp',
+    'imagenes/DSC_8749.webp',
+    'imagenes/DSC_8751.webp',
+    'imagenes/DSC_8752.webp',
+    'imagenes/DSC_8754.webp',
+    'imagenes/DSC_8758.webp',
+    'imagenes/DSC_8760.webp',
+    'imagenes/DSC_8761.webp',
+    'imagenes/DSC_8762.webp',
+    'imagenes/DSC_8764.webp',
+    'imagenes/DSC_8765.webp',
+    'imagenes/DSC_8767.webp',
+    'imagenes/DSC_8770.webp',
+    'imagenes/DSC_8771.webp',
+    'imagenes/DSC_8773.webp',
+    'imagenes/DSC_8776.webp',
+    'imagenes/DSC_8777.webp',
+    'imagenes/DSC_8778.webp',
+    'imagenes/DSC_8779.webp',
+    'imagenes/DSC_8780.webp',
+    'imagenes/DSC_8781.webp',
+    'imagenes/IMG_0585.webp',
+    'imagenes/IMG_0586.webp',
+    'imagenes/IMG_0587.webp',
+    'imagenes/IMG_0590.webp',
+    'imagenes/IMG_0591.webp',
+    'imagenes/IMG_0595.webp',
+    'imagenes/IMG_0603.webp',
+    'imagenes/IMG_0605.webp',
+    'imagenes/IMG_0606.webp',
+    'imagenes/IMG_0608.webp',
+    'imagenes/IMG_0611.webp',
+    'imagenes/IMG_0614.webp',
+    'imagenes/IMG_0619.webp',
+    'imagenes/IMG_0620.webp',
+    'imagenes/IMG_0627.webp',
+    'imagenes/IMG_0632.webp',
+    'imagenes/IMG_0635.webp',
+    'imagenes/IMG_0636.webp',
+    'imagenes/IMG_0637.webp',
+    'imagenes/IMG_0639.webp',
+    'imagenes/IMG_0640.webp',
+    'imagenes/IMG_0645.webp',
+    'imagenes/IMG_0647.webp',
+    'imagenes/IMG_0650.webp',
+    'imagenes/IMG_0659.webp',
+    'imagenes/IMG_0660.webp',
+    'imagenes/IMG_0784.webp',
+    'imagenes/IMG_0787.webp',
+    'imagenes/IMG_0789.webp',
+    'imagenes/IMG_0792.webp',
+    'imagenes/IMG_0794.webp',
+    'imagenes/IMG_0798.webp',
+    'imagenes/IMG_0801.webp',
+    'imagenes/IMG_0804.webp',
+    'imagenes/IMG_0807.webp',
+    'imagenes/IMG_0808.webp',
+    'imagenes/IMG_0809.webp',
+    'imagenes/IMG_0810.webp',
+    'imagenes/IMG_0811.webp',
+    'imagenes/IMG_0812.webp',
+    'imagenes/IMG_0815.webp',
+    'imagenes/IMG_0816.webp',
+    'imagenes/IMG_0817.webp',
+    'imagenes/IMG_0818.webp',
+    'imagenes/IMG_0819.webp',
+    'imagenes/IMG_0820.webp',
+    'imagenes/IMG_0822.webp',
+    'imagenes/IMG_0823.webp',
+    'imagenes/IMG_0824.webp',
+    'imagenes/IMG_0830.webp',
+    'imagenes/IMG_0837.webp',
+    'imagenes/IMG_0844.webp',
+    'imagenes/IMG_0846.webp',
+    'imagenes/IMG_0857.webp',
+    'imagenes/IMG_0859.webp',
+    'imagenes/IMG_0864.webp',
+    'imagenes/IMG_0865.webp',
+    'imagenes/IMG_0867.webp',
+    'imagenes/IMG_0868.webp',
+    'imagenes/IMG_0869.webp',
+    'imagenes/IMG_0870.webp',
+    'imagenes/IMG_0872.webp',
+    'imagenes/IMG_0876.webp',
+    'imagenes/IMG_0877.webp',
+    'imagenes/IMG_0880.webp',
+    'imagenes/IMG_0883.webp'
 ];
 
 const STORAGE_KEY = 'xv_anos_ana_sofia_photo_selections';
 const LIMITES = {
-    ampliacion: 1,
     impresion: 100,
     invitacion: null
 };
+const COSTO_FOTO_ADICIONAL = 15; // $15 MXN por foto adicional
+
 let photoSelections = {};
 let currentPhotoIndex = null;
 let currentFilter = 'all';
@@ -428,7 +739,6 @@ function clearAllSelections() {
 // ========================================
 function getStats() {
     const stats = {
-        ampliacion: 0,
         impresion: 0,
         invitacion: 0,
         descartada: 0,
@@ -436,7 +746,6 @@ function getStats() {
     };
 
     Object.values(photoSelections).forEach(selection => {
-        if (selection.ampliacion) stats.ampliacion++;
         if (selection.impresion) stats.impresion++;
         if (selection.invitacion) stats.invitacion++;
         if (selection.descartada) stats.descartada++;
@@ -450,36 +759,36 @@ function getStats() {
 function updateStats() {
     const stats = getStats();
 
-    // Actualizar contadores con indicadores de límite
-    document.getElementById('countAmpliacion').textContent =
-        LIMITES.ampliacion ? `${stats.ampliacion}/${LIMITES.ampliacion}` : stats.ampliacion;
+    // Actualizar contadores
     document.getElementById('countImpresion').textContent =
         LIMITES.impresion ? `${stats.impresion}/${LIMITES.impresion}` : stats.impresion;
     document.getElementById('countInvitacion').textContent = stats.invitacion;
     document.getElementById('countDescartada').textContent = stats.descartada;
     document.getElementById('countSinClasificar').textContent = stats.sinClasificar;
 
-    // Agregar clases de advertencia si se exceden los límites
-    const ampliacionCard = document.querySelector('.stat-card.ampliacion');
-    const impresionCard = document.querySelector('.stat-card.impresion');
+    // Calcular costo extra
+    const fotosAdicionales = Math.max(0, stats.impresion - LIMITES.impresion);
+    const costoExtra = fotosAdicionales * COSTO_FOTO_ADICIONAL;
 
-    if (ampliacionCard) {
-        if (stats.ampliacion > LIMITES.ampliacion) {
-            ampliacionCard.style.borderColor = '#f44336';
-            ampliacionCard.style.backgroundColor = 'rgba(244, 67, 54, 0.1)';
-        } else if (stats.ampliacion === LIMITES.ampliacion) {
-            ampliacionCard.style.borderColor = '#4caf50';
-            ampliacionCard.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
+    // Mostrar/ocultar costo extra
+    const extraCostDisplay = document.getElementById('extraCostDisplay');
+    if (extraCostDisplay) {
+        if (fotosAdicionales > 0) {
+            extraCostDisplay.classList.add('visible');
+            document.getElementById('extraCostAmount').textContent = `$${costoExtra} MXN`;
+            document.getElementById('extraCostDetail').textContent = `${fotosAdicionales} foto${fotosAdicionales > 1 ? 's' : ''} adicional${fotosAdicionales > 1 ? 'es' : ''} x $${COSTO_FOTO_ADICIONAL}`;
         } else {
-            ampliacionCard.style.borderColor = '';
-            ampliacionCard.style.backgroundColor = '';
+            extraCostDisplay.classList.remove('visible');
         }
     }
 
+    // Agregar clases de advertencia si se exceden los límites
+    const impresionCard = document.querySelector('.stat-card.impresion');
+
     if (impresionCard) {
         if (stats.impresion > LIMITES.impresion) {
-            impresionCard.style.borderColor = '#f44336';
-            impresionCard.style.backgroundColor = 'rgba(244, 67, 54, 0.1)';
+            impresionCard.style.borderColor = '#ff9800';
+            impresionCard.style.backgroundColor = 'rgba(255, 152, 0, 0.1)';
         } else if (stats.impresion === LIMITES.impresion) {
             impresionCard.style.borderColor = '#4caf50';
             impresionCard.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
@@ -504,7 +813,7 @@ function renderGallery() {
 
     photos.forEach((photo, index) => {
         const selection = photoSelections[index] || {};
-        const hasAny = selection.ampliacion || selection.impresion || selection.invitacion || selection.descartada;
+        const hasAny = selection.impresion || selection.invitacion || selection.descartada;
 
         const card = document.createElement('div');
         card.className = 'photo-card';
@@ -515,7 +824,6 @@ function renderGallery() {
             card.classList.add('has-descartada');
         } else {
             const categories = [];
-            if (selection.ampliacion) categories.push('ampliacion');
             if (selection.impresion) categories.push('impresion');
             if (selection.invitacion) categories.push('invitacion');
 
@@ -530,7 +838,6 @@ function renderGallery() {
         let badgesHTML = '';
         if (hasAny) {
             badgesHTML = '<div class="photo-badges">';
-            if (selection.ampliacion) badgesHTML += '<span class="badge badge-ampliacion">🖼️ Ampliación</span>';
             if (selection.impresion) badgesHTML += '<span class="badge badge-impresion">📸 Impresión</span>';
             if (selection.invitacion) badgesHTML += '<span class="badge badge-invitacion">💌 Invitación</span>';
             if (selection.descartada) badgesHTML += '<span class="badge badge-descartada">❌ Descartada</span>';
@@ -572,9 +879,6 @@ function applyFilter() {
             case 'all':
                 show = true;
                 break;
-            case 'ampliacion':
-                show = selection.ampliacion === true;
-                break;
             case 'impresion':
                 show = selection.impresion === true;
                 break;
@@ -585,7 +889,7 @@ function applyFilter() {
                 show = selection.descartada === true;
                 break;
             case 'sin-clasificar':
-                show = !selection.ampliacion && !selection.impresion && !selection.invitacion && !selection.descartada;
+                show = !selection.impresion && !selection.invitacion && !selection.descartada;
                 break;
         }
 
@@ -612,7 +916,6 @@ function updateFilterButtons() {
     const stats = getStats();
 
     document.getElementById('btnFilterAll').textContent = `Todas (${photos.length})`;
-    document.getElementById('btnFilterAmpliacion').textContent = `Ampliación (${stats.ampliacion})`;
     document.getElementById('btnFilterImpresion').textContent = `Impresión (${stats.impresion})`;
     document.getElementById('btnFilterInvitacion').textContent = `Invitación (${stats.invitacion})`;
     document.getElementById('btnFilterDescartada').textContent = `Descartadas (${stats.descartada})`;
@@ -746,21 +1049,27 @@ function saveModalSelection() {
 // EXPORT FUNCTIONS
 // ========================================
 function exportToJSON() {
+    const stats = getStats();
+    const fotosAdicionales = Math.max(0, stats.impresion - LIMITES.impresion);
+    const costoExtra = fotosAdicionales * COSTO_FOTO_ADICIONAL;
+
     const exportData = {
         evento: 'XV Años - Ana Sofía Cruz Pérez',
         fecha_exportacion: new Date().toISOString(),
         total_fotos: photos.length,
-        estadisticas: getStats(),
+        estadisticas: stats,
+        fotos_incluidas: LIMITES.impresion,
+        fotos_adicionales: fotosAdicionales,
+        costo_adicional: costoExtra,
         selecciones: []
     };
 
     photos.forEach((photo, index) => {
         const selection = photoSelections[index];
-        if (selection && (selection.ampliacion || selection.impresion || selection.invitacion || selection.descartada)) {
+        if (selection && (selection.impresion || selection.invitacion || selection.descartada)) {
             exportData.selecciones.push({
                 numero_foto: index + 1,
                 archivo: photo,
-                ampliacion: selection.ampliacion || false,
                 impresion: selection.impresion || false,
                 invitacion: selection.invitacion || false,
                 descartada: selection.descartada || false
@@ -772,7 +1081,7 @@ function exportToJSON() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `seleccion-fotos-xv-anos-ainhoa-${new Date().toISOString().split('T')[0]}.json`;
+    a.download = `seleccion-fotos-xv-anos-ana-sofia-${new Date().toISOString().split('T')[0]}.json`;
     a.click();
     URL.revokeObjectURL(url);
 
@@ -781,22 +1090,30 @@ function exportToJSON() {
 
 function generateTextSummary() {
     const stats = getStats();
+    const fotosAdicionales = Math.max(0, stats.impresion - LIMITES.impresion);
+    const costoExtra = fotosAdicionales * COSTO_FOTO_ADICIONAL;
+
     let summary = '🎉 SELECCIÓN DE FOTOS - XV AÑOS ANA SOFÍA CRUZ PÉREZ\n';
     summary += '═══════════════════════════════════════════════════\n\n';
     summary += `📋 SEGÚN CONTRATO:\n`;
-    summary += `   🖼️  Ampliación requerida: ${LIMITES.ampliacion} foto\n`;
-    summary += `   📸 Impresión requerida: ${LIMITES.impresion} fotos\n\n`;
+    summary += `   📸 Impresión incluida: ${LIMITES.impresion} fotos\n`;
+    summary += `   🖼️  Ampliación: YA IMPRESA\n\n`;
     summary += `📊 RESUMEN ACTUAL:\n`;
-    summary += `   Total de fotos: ${photos.length}\n`;
-    summary += `   🖼️  Para ampliación: ${stats.ampliacion}/${LIMITES.ampliacion} ${stats.ampliacion === LIMITES.ampliacion ? '✓' : stats.ampliacion > LIMITES.ampliacion ? '⚠️ EXCEDIDO' : '⚠️ FALTA'}\n`;
-    summary += `   📸 Para impresión: ${stats.impresion}/${LIMITES.impresion} ${stats.impresion === LIMITES.impresion ? '✓' : stats.impresion > LIMITES.impresion ? '⚠️ EXCEDIDO' : '⚠️ FALTA'}\n`;
+    summary += `   Total de fotos disponibles: ${photos.length}\n`;
+    summary += `   📸 Para impresión: ${stats.impresion}/${LIMITES.impresion} ${stats.impresion === LIMITES.impresion ? '✓' : stats.impresion > LIMITES.impresion ? '⚠️ ADICIONALES' : '⚠️ FALTA'}\n`;
     summary += `   💌 Para invitación: ${stats.invitacion}\n`;
     summary += `   ❌ Descartadas: ${stats.descartada}\n`;
     summary += `   ⭕ Sin clasificar: ${stats.sinClasificar}\n\n`;
 
-    const categories = ['ampliacion', 'impresion', 'invitacion', 'descartada'];
+    if (fotosAdicionales > 0) {
+        summary += `💰 COSTO ADICIONAL:\n`;
+        summary += `   Fotos adicionales: ${fotosAdicionales}\n`;
+        summary += `   Costo por foto: $${COSTO_FOTO_ADICIONAL} MXN\n`;
+        summary += `   TOTAL ADICIONAL: $${costoExtra} MXN\n\n`;
+    }
+
+    const categories = ['impresion', 'invitacion', 'descartada'];
     const categoryNames = {
-        ampliacion: '🖼️  AMPLIACIÓN',
         impresion: '📸 IMPRESIÓN',
         invitacion: '💌 INVITACIÓN',
         descartada: '❌ DESCARTADAS'
@@ -877,7 +1194,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter buttons
     document.getElementById('btnFilterAll').addEventListener('click', () => setFilter('all'));
-    document.getElementById('btnFilterAmpliacion').addEventListener('click', () => setFilter('ampliacion'));
     document.getElementById('btnFilterImpresion').addEventListener('click', () => setFilter('impresion'));
     document.getElementById('btnFilterInvitacion').addEventListener('click', () => setFilter('invitacion'));
     document.getElementById('btnFilterDescartada').addEventListener('click', () => setFilter('descartada'));
@@ -885,7 +1201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set data-filter attributes
     document.getElementById('btnFilterAll').dataset.filter = 'all';
-    document.getElementById('btnFilterAmpliacion').dataset.filter = 'ampliacion';
     document.getElementById('btnFilterImpresion').dataset.filter = 'impresion';
     document.getElementById('btnFilterInvitacion').dataset.filter = 'invitacion';
     document.getElementById('btnFilterDescartada').dataset.filter = 'descartada';
@@ -904,36 +1219,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btnCancelSelection').addEventListener('click', closeModal);
     document.getElementById('btnSaveSelection').addEventListener('click', saveModalSelection);
 
-    // Option buttons con validación de límites
+    // Option buttons
     document.querySelectorAll('.option-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            const category = btn.dataset.category;
-            const isCurrentlySelected = btn.classList.contains('selected');
-
-            // Si está intentando seleccionar (no deseleccionar)
-            if (!isCurrentlySelected) {
-                const stats = getStats();
-
-                // Validar límites
-                if (category === 'ampliacion' && stats.ampliacion >= LIMITES.ampliacion) {
-                    // Verificar si esta foto ya tiene ampliación seleccionada
-                    const currentSelection = photoSelections[currentPhotoIndex] || {};
-                    if (!currentSelection.ampliacion) {
-                        showToast(`⚠️ Ya seleccionaste ${LIMITES.ampliacion} foto(s) para ampliación. Deselecciona otra primero.`, 'error');
-                        return;
-                    }
-                }
-
-                if (category === 'impresion' && stats.impresion >= LIMITES.impresion) {
-                    // Verificar si esta foto ya tiene impresión seleccionada
-                    const currentSelection = photoSelections[currentPhotoIndex] || {};
-                    if (!currentSelection.impresion) {
-                        showToast(`⚠️ Ya seleccionaste ${LIMITES.impresion} fotos para impresión. Deselecciona otra primero.`, 'error');
-                        return;
-                    }
-                }
-            }
-
             btn.classList.toggle('selected');
         });
     });
