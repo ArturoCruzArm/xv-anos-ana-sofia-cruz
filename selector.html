@@ -19,6 +19,8 @@
             background: #000;
             padding: 0;
             margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
         }
         .video-section-title {
             font-family: 'Playfair Display', serif;
@@ -43,6 +45,50 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+        .video-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+        }
+        .video-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+        .video-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .video-btn.youtube {
+            background: linear-gradient(135deg, #FF0000, #cc0000);
+        }
+        .video-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+        .video-btn.facebook {
+            background: linear-gradient(135deg, #1877F2, #0d5bbf);
+        }
+        .video-btn.twitter {
+            background: linear-gradient(135deg, #1DA1F2, #0c85d0);
+        }
+        .video-btn.copy {
+            background: linear-gradient(135deg, #d4a373, #b8956a);
+        }
+        .video-btn i {
+            font-size: 1.1rem;
         }
 
         /* Ampliacion Section */
@@ -152,17 +198,46 @@
     </header>
 
     <div class="container">
-        <!-- Video Section - Sesión -->
+        <!-- Video Section - Sesión y Fiesta -->
         <section class="video-section">
-            <h2 class="video-section-title">Sesión</h2>
+            <h2 class="video-section-title">Sesión y Fiesta</h2>
             <div class="video-wrapper">
                 <iframe
-                    src="https://www.youtube.com/embed/WJFpE6p71DM?autoplay=1&mute=1&loop=1&playlist=WJFpE6p71DM&controls=1&modestbranding=1&rel=0&showinfo=0&vq=hd1080"
+                    src="https://www.youtube.com/embed/hqwiDp6W-J8?autoplay=1&mute=1&loop=1&playlist=hqwiDp6W-J8&controls=1&modestbranding=1&rel=0&showinfo=0&vq=hd1080"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
+            <div class="video-actions">
+                <a href="https://youtu.be/hqwiDp6W-J8" target="_blank" class="video-btn youtube">
+                    <i class="fab fa-youtube"></i> Ver en YouTube
+                </a>
+                <a href="https://wa.me/?text=Mira%20el%20video%20de%20XV%20A%C3%B1os%20de%20Ana%20Sof%C3%ADa%20%F0%9F%8E%89%20https://youtu.be/hqwiDp6W-J8" target="_blank" class="video-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/hqwiDp6W-J8" target="_blank" class="video-btn facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://youtu.be/hqwiDp6W-J8&text=Mira%20el%20video%20de%20XV%20A%C3%B1os%20de%20Ana%20Sof%C3%ADa%20%F0%9F%8E%89" target="_blank" class="video-btn twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <button onclick="copyVideoLink()" class="video-btn copy">
+                    <i class="fas fa-link"></i> Copiar Enlace
+                </button>
+            </div>
         </section>
+
+        <script>
+            function copyVideoLink() {
+                const videoUrl = 'https://youtu.be/hqwiDp6W-J8';
+                navigator.clipboard.writeText(videoUrl).then(() => {
+                    const toast = document.getElementById('toast');
+                    toast.textContent = '¡Enlace copiado al portapapeles!';
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 3000);
+                });
+            }
+        </script>
 
         <!-- Ampliación Section -->
         <section class="ampliacion-section">
